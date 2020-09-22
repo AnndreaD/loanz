@@ -1,0 +1,14 @@
+$background: #fbfbf9;
+$green-alternate: #4d907d;
+$green-medium-light-alternate: #d4f0e8;
+$green-profile: #6eceb2;
+$green-success: #b6e6d8;
+
+:export {
+    background: $background;
+
+    greenAlternate: $green-alternate;
+    greenMediumLightAlternate: $green-medium-light-alternate;
+    greenProfile: $green-profile;
+    greenSuccess: $green-success;
+}
