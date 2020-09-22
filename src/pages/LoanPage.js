@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LoanSlider from '../components/LoanSlider/LoanSlider';
 import Container from '../components/Container/Container';
-import { getEstimatedTotal, getMonthlyFee } from '../utils/MathUtils';
+import { getEstimatedTotal, getMonthlyFee, formatNumber } from '../utils/MathUtils';
 import { texts } from '../messages/Messages';
 const marksAmount = [
     {
@@ -29,9 +29,9 @@ const LoanPage = () => {
     const [amount, setAmount] = useState(1000);
     return (
         <>
-            <Container title={'Lånekalkulator'}>
+            <Container title={texts.title}>
                 <LoanSlider
-                    title={'Hvor mye ønsker du å låne?'}
+                    title={texts.slidertitleamount}
                     value={amount}
                     onChange={(value) => setAmount(value)}
                     step={1000}
@@ -40,7 +40,7 @@ const LoanPage = () => {
                     marks={marksAmount}
                 />
                 <LoanSlider
-                    title={'Over hvor mange år?'}
+                    title={texts.slidertitleyear}
                     value={years}
                     onChange={(years) => setYears(years)}
                     step={1}
@@ -50,11 +50,12 @@ const LoanPage = () => {
                 />
                 <h3>
                     {texts.totalprice}
-                    {getEstimatedTotal(amount, years)} {texts.currency}
+                    {formatNumber(getEstimatedTotal(amount, years))}
+                    {texts.currency}
                 </h3>
                 <p>{texts.interest}</p>
                 <p>
-                    {texts.mothly} {getMonthlyFee(amount, years)} {texts.currency}
+                    {texts.mothly} {formatNumber(getMonthlyFee(amount, years))} {texts.currency}
                 </p>
             </Container>
         </>

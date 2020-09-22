@@ -15,3 +15,7 @@ const percent = 0.0035;
 export const getMonthlyFee = (amount, years) => {
     return Math.ceil(amount * (percent / (1 - Math.pow(1 + percent, -years * 12))));
 };
+
+export function formatNumber(number) {
+    return new Intl.NumberFormat('nb').format(number);
+}
