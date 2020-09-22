@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import LoanSlider from '../components/LoanSlider/LoanSlider';
 import Container from '../components/Container/Container';
-import { getEstimatedTotal, getMonthlyFee } from '../MathUtils';
-import { texts } from '../Messages';
+import { getEstimatedTotal, getMonthlyFee } from '../utils/MathUtils';
+import { texts } from '../messages/Messages';
 const marksAmount = [
     {
         value: 0,
@@ -50,10 +50,12 @@ const LoanPage = () => {
                 />
                 <h3>
                     {texts.totalprice}
-                    {getEstimatedTotal(amount, years)} kr
+                    {getEstimatedTotal(amount, years)} {texts.currency}
                 </h3>
-                <p>Rente 3,5%</p>
-                <p>Estimert månedlig avdrag {getMonthlyFee(amount, years)} kr </p>
+                <p>{texts.interest}</p>
+                <p>
+                    {texts.mothly} {getMonthlyFee(amount, years)} {texts.currency}
+                </p>
             </Container>
         </>
     );

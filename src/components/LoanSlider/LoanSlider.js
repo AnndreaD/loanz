@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { Button, TextField } from '@material-ui/core';
-import { Slider, Typography, Input } from '@material-ui/core';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { TextField } from '@material-ui/core';
+import { Slider, Typography } from '@material-ui/core';
 import './LoanSlider.scss';
 
 const LoanSlider = ({ title, value, onChange, min, max, step, marks }) => {
@@ -36,3 +37,12 @@ const LoanSlider = ({ title, value, onChange, min, max, step, marks }) => {
 };
 
 export default LoanSlider;
+
+LoanSlider.propTypes = {
+    title: PropTypes.string,
+    value: PropTypes.number,
+    min: PropTypes.number,
+    max: PropTypes.number,
+    step: PropTypes.number,
+    marks: PropTypes.array,
+};
