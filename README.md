@@ -1,11 +1,12 @@
+# loanz
+
 This is a loan calculator that will calculate the total cost and the monthly payback given desired amout and year.
 
-Material UI is the component library used
+-   Material UI is the component library used
+-   Prettier is used for code formatting, for rules see 'package.json' and eslint is configured globaly.
+-   Husky is set up to run all tests on push to make sure no broken code due to tests, gets out.
 
-Prettier is used for code formatting, for rules see 'package.json' and eslint is configured globaly.
-Husky is set up to run all tests on push to make sure no broken code due to tests, gets out.
-
-Jest and enzyme are used for testing purposes.
+-   Jest and enzyme are used for testing purposes.
 
 This project requires Npm.
 
@@ -32,5 +33,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
-
-# loanz
