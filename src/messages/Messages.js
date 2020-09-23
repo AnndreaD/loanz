@@ -1,10 +1,12 @@
+import { constants } from '../utils/constants';
+
 export const texts = {
-    title: 'Lånekalkulator',
-    totalprice: 'Estimert totalpris ',
-    interest: 'Rente 3,5% ',
-    mothly: 'Estimert månedlig avdrag ',
+    title: 'Loan calculator',
+    totalprice: 'Estimated totalprice ',
+    interest: 'Interest ' + constants.interest + '% ',
+    mothly: 'Monthly installments',
     currency: 'Kr',
 
-    slidertitleamount: 'Hvor mye ønsker du å låne?',
-    slidertitleyear: 'Over hvor mange år?',
+    slidertitleamount: 'How much do you wish to loan?',
+    slidertitleyear: 'Over how many years?',
 };

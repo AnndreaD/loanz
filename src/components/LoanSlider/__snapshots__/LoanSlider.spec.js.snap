@@ -5,7 +5,7 @@ exports[`LoanSlider SNAPSHOT: should render expected content 1`] = `
   className="slider-container"
 >
   <p
-    className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+    className="MuiTypography-root MuiTypography-body1"
     id="discrete-slider-small-steps"
   />
   <div

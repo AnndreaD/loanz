@@ -15,9 +15,7 @@ const LoanSlider = ({ title, value, onChange, min, max, step, marks }) => {
 
     return (
         <div className="slider-container">
-            <Typography id="discrete-slider-small-steps" gutterBottom>
-                {title}
-            </Typography>
+            <Typography id="discrete-slider-small-steps">{title}</Typography>
             <TextField value={value} onChange={handleInputChange} variant="outlined" id="outlined-basic" />
             <div className="loan-slider">
                 <Slider

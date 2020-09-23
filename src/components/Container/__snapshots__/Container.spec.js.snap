@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container SNAPSHOT: should render expected content 1`] = `
+<div
+  className="container"
+>
+  <h1
+    className="container-title"
+  />
+</div>
+`;

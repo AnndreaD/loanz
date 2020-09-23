@@ -41,5 +41,9 @@ describe('LoanSlider', () => {
         const title = wrapper.find(Typography);
         expect(title).toHaveLength(1);
         expect(title.text()).toEqual('This is a title');
+
+        expect(wrapper.find('input')).toHaveLength(2);
     });
+
+    /* TODO test specific items of component */
 });

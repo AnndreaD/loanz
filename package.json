@@ -35,6 +35,11 @@
         "tabWidth": 4,
         "printWidth": 130
     },
+    "husky": {
+        "hooks": {
+            "pre-push": " CI=true npm test"
+        }
+    },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",

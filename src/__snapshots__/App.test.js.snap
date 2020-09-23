@@ -10,16 +10,16 @@ exports[`App SNAPSHOT: should render expected content 1`] = `
     <h1
       className="container-title"
     >
-      Lånekalkulator
+      Loan calculator
     </h1>
     <div
       className="slider-container"
     >
       <p
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+        className="MuiTypography-root MuiTypography-body1"
         id="discrete-slider-small-steps"
       >
-        Hvor mye ønsker du å låne?
+        How much do you wish to loan?
       </p>
       <div
         className="MuiFormControl-root MuiTextField-root"
@@ -177,10 +177,10 @@ exports[`App SNAPSHOT: should render expected content 1`] = `
       className="slider-container"
     >
       <p
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+        className="MuiTypography-root MuiTypography-body1"
         id="discrete-slider-small-steps"
       >
-        Over hvor mange år?
+        Over how many years?
       </p>
       <div
         className="MuiFormControl-root MuiTextField-root"
@@ -335,16 +335,15 @@ exports[`App SNAPSHOT: should render expected content 1`] = `
       </div>
     </div>
     <h3>
-      Estimert totalpris 
-      1032
-       
+      Estimated totalprice 
+      1,032
       Kr
     </h3>
     <p>
-      Rente 3,5% 
+      Interest 3.5% 
     </p>
     <p>
-      Estimert månedlig avdrag 
+      Monthly installments
        
       86
        
