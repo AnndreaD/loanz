@@ -12,9 +12,8 @@ export const getNumberOfMonths = (years) => {
     return years * 12;
 };
 
-const percent = constants.interest / 1000;
-
 export const getMonthlyFee = (amount, years) => {
+    const percent = constants.interest / 1000;
     return Math.ceil(amount * (percent / (1 - Math.pow(1 + percent, -years * 12))));
 };
 
